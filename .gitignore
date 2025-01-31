@@ -1,0 +1,17 @@
+# Gradle files
+.gradle/
+build/
+caches/
+daemon/
+
+# Android Studio specific files
+.idea/
+local.properties
+
+# OS-specific files
+*.log
+*.bak
+*.swp
+
+# Android files
+app/build/
