@@ -1,8 +1,12 @@
 # Gradle files
 .gradle/
+.idea/
+.tmp/
 build/
 caches/
 daemon/
+wrapper/
+jdks/
 
 # Android Studio specific files
 .idea/

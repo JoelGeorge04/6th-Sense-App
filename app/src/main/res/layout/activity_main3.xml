@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- Team score -->
+    <TextView
+        android:id="@+id/teamScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Score: 0"
+        android:textSize="24sp"
+        android:textColor="#754545"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Input for score -->
+    <EditText
+        android:id="@+id/scoreInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Score"
+        android:textColorHint="#474644"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/rounded"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Reset score button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/resetScoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Score"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:background="#F44336"
+        android:elevation="4dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Scrollable area to display score history -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:id="@+id/scoreHistoryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"/>
+    </ScrollView>
+    <!-- Add score button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addScoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Score"
+        android:textColor="#050505"
+        android:background="#4CAF50"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"
+        android:elevation="4dp" />
+
+</LinearLayout>
